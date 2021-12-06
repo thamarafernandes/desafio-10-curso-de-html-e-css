@@ -49,16 +49,34 @@ nav > a:hover{
 }
 
 main{
-    padding-top: 50px;
+    background-color: #33b46d;
+    padding: 0 0px 10px;
 }
 
-main > h1{
+article{
+    padding: 50px 40px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+
+}
+
+article > h1{
     font-family: "idroid";
     text-align: center;
     color: #1a663b;
     margin-bottom: 20px;
 }
 
-main > p{
-    padding: 20px;
+article > h2{
+    font-family: "idroid";
+    color: #1a663b;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+article> p{
+    margin-bottom: 19.2px;
 }
