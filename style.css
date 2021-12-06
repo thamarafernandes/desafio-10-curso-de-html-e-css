@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    background-image: linear-gradient(#37c878, #124829);
+    width: 100%;
+}
+
+#cabecalho{
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#cabecalho > h1{
+    margin-bottom: 16px;
+    
+}
+
+#cabecalho > p{
+    margin-bottom: 10px;
+}
+
+nav{
+    padding: 10px 10px 5px;
+    text-align: center;
+}
+
+nav > a {
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav > a:hover{
+    border-radius: 10px;
+    background-color: #33b46d;
+}
