@@ -45,7 +45,7 @@ nav > a:hover{
     border-radius: 10px;
     background-color: #33b46d;
 }
-
+/*fim barra de menu*/
 /*conteudo*/
 @font-face {
     font-family: "idroid";
@@ -58,7 +58,6 @@ main{
 }
 
 article{
-    padding: 50px 40px;
     background-color: #fff;
     box-shadow: 0 5px 10px #00000071;
     border-radius: 0 0 10px 10px;
@@ -68,14 +67,18 @@ article{
 
 }
 
-article > h1{
+.conteudo{
+    padding: 50px 40px;
+}
+
+.conteudo > h1{
     font-family: "idroid";
     text-align: center;
     color: #1a663b;
     margin-bottom: 20px;
 }
 
-article > h2{
+.conteudo > h2{
     font-size: 1.2rem;
     font-family: "idroid";
     color: #1a663b;
@@ -83,7 +86,7 @@ article > h2{
     margin-bottom: 20px;
 }
 
-article> p{
+.conteudo> p{
     margin-bottom: 19.2px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -93,34 +96,49 @@ article> p{
     font-weight: bold;
 }
 
-/*links no conteúdo*/
-article> p{
+.conteudo> p{
     text-indent: 1.5rem;
 }
 
-article> p > a{
+/*links no conteúdo*/
+
+.conteudo> p > a{
     text-decoration: none;
     color: #207947;
     font-weight: bold;
 }
 
-article> p > a:hover{
+.conteudo> p > a:hover{
     background-color: #207947;
     color: #fff;
     background-clip: content-box;
 }
 
-article> p > a:hover::after{
+.conteudo> p > a:hover::after{
     background-color: #fff
 }
 
-article> p > a::after{
+.conteudo> p > a::after{
     content: " 🔗";
     color: initial;
 }
+
+/*fim links*/
 
 img{
     max-width: 100%;
     display: block;
     margin: 1rem auto;
+}
+
+#video{
+    background-color: #124829;
+    background-clip: border-box;
+    margin: 0;
+}
+
+iframe{
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
