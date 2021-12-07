@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+/*Barra de menu*/
 header{
     margin: 0;
     background-image: linear-gradient(#37c878, #124829);
@@ -17,12 +18,15 @@ header{
 }
 
 #cabecalho > h1{
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     
 }
 
 #cabecalho > p{
     margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    padding: 0 20px;
 }
 
 nav{
@@ -32,7 +36,7 @@ nav{
 
 nav > a {
     display: inline-flex;
-    padding: 10px;
+    padding: 3px 10px;
     text-decoration: none;
     color: #fff;
 }
@@ -90,6 +94,9 @@ article> p{
 }
 
 /*links no conteúdo*/
+article> p{
+    text-indent: 1.5rem;
+}
 
 article> p > a{
     text-decoration: none;
@@ -110,4 +117,10 @@ article> p > a:hover::after{
 article> p > a::after{
     content: " 🔗";
     color: initial;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
 }
