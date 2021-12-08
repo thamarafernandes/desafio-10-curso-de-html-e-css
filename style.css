@@ -1,8 +1,22 @@
+/*gerais*/
 @charset "UTF-8";
 
 *{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+p{
+    text-indent: 1.5rem;
+    text-align: justify;
+    margin: 10px 0;
+    text-indent: 1.5rem;
+}
+
+.destaque{
+    color: #207947;
+    font-weight: bold;
+}
+/*fim gerais*/
 
 /*Barra de menu*/
 header{
@@ -13,22 +27,24 @@ header{
 
 #cabecalho{
     color: #fff;
-    text-align: center;
     padding-top: 20px;
 }
 
 #cabecalho > h1{
     margin-bottom: 5px;
+    text-align: center;
     
 }
 
-#cabecalho > p{
+#pheader{
     margin-bottom: 10px;
     font-size: 0.9rem;
     font-weight: lighter;
     padding: 0 20px;
+    text-align: center;
 }
 
+/*links nav*/
 nav{
     padding: 10px 10px 5px;
     text-align: center;
@@ -45,7 +61,9 @@ nav > a:hover{
     border-radius: 10px;
     background-color: #33b46d;
 }
+/*fimlinks nav*/
 /*fim barra de menu*/
+
 /*conteudo*/
 @font-face {
     font-family: "idroid";
@@ -53,8 +71,8 @@ nav > a:hover{
 }
 
 main{
-    background-color: #33b46d;
-    padding: 0 0px 10px;
+    background-color: #6cc795;
+    padding-bottom: 30px;
 }
 
 article{
@@ -64,18 +82,18 @@ article{
     max-width: 80%;
     margin: auto;
     text-align: justify;
-
+    padding-bottom: 20px;
 }
 
 .conteudo{
-    padding: 50px 40px;
+    padding: 10px 40px;
 }
 
 .conteudo > h1{
     font-family: "idroid";
     text-align: center;
     color: #1a663b;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .conteudo > h2{
@@ -83,25 +101,11 @@ article{
     font-family: "idroid";
     color: #1a663b;
     text-align: left;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-.conteudo> p{
-    margin-bottom: 19.2px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.destaque{
-    color: #207947;
-    font-weight: bold;
-}
-
-.conteudo> p{
-    text-indent: 1.5rem;
-}
 
 /*links no conteúdo*/
-
 .conteudo> p > a{
     text-decoration: none;
     color: #207947;
@@ -122,13 +126,13 @@ article{
     content: " 🔗";
     color: initial;
 }
-
 /*fim links*/
 
+/*midias*/
 img{
     max-width: 100%;
     display: block;
-    margin: 1rem auto;
+    margin: 10px auto;
 }
 
 #video{
@@ -142,3 +146,50 @@ iframe{
     display: block;
     margin: auto;
 }
+/*fim midias*/
+
+/*extra*/
+#extra {
+    display: block;
+    background-color: #bce1cc;
+    box-shadow: #00000071 0px 5px 5px;
+    margin: 40px 40px 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#extra > h1 {
+    font-size: 1rem;
+    background-color: rgb(33, 141, 78);
+    background-clip: padding-box;
+    color: #fff;
+    margin: 0px;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#extra > p {
+    padding: 0 20px;
+}
+
+#extra > p>  a {
+    color: rgb(32, 121, 71);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#extra > p > a:hover{
+    background-color: #207947;
+    color: #fff;
+    background-clip: content-box;
+}
+
+#extra > p > a:hover::after{
+    background-color: #bce1cc;
+}
+
+#extra > p > a::after{
+    content: " 🔗";
+    color: initial;
+}
+/*fim extra*/
