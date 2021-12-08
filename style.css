@@ -1,5 +1,10 @@
 /*gerais*/
-@charset "UTF-8";
+@charset "utf-8";
+
+@font-face {
+    font-family: "idroid";
+    src: url(fontes/idroid.otf);
+}
 
 *{
     margin: 0;
@@ -16,12 +21,20 @@ p{
     color: #207947;
     font-weight: bold;
 }
+
+h2{
+    font-size: 1.2rem;
+    font-family: "idroid";
+    color: #1a663b;
+    text-align: left;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #6cc79580, #ffff);
+}
 /*fim gerais*/
 
 /*Barra de menu*/
 header{
-    margin: 0;
-    background-image: linear-gradient(#37c878, #124829);
+    background: linear-gradient(#37c878, #2fa062, #24814c,#175c35);
     width: 100%;
 }
 
@@ -65,11 +78,6 @@ nav > a:hover{
 /*fim barra de menu*/
 
 /*conteudo*/
-@font-face {
-    font-family: "idroid";
-    src: url(fontes/idroid.otf);
-}
-
 main{
     background-color: #6cc795;
     padding-bottom: 30px;
@@ -93,14 +101,6 @@ article{
     font-family: "idroid";
     text-align: center;
     color: #1a663b;
-    margin: 20px 0;
-}
-
-.conteudo > h2{
-    font-size: 1.2rem;
-    font-family: "idroid";
-    color: #1a663b;
-    text-align: left;
     margin: 20px 0;
 }
 
