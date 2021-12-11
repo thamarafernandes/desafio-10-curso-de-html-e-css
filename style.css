@@ -205,6 +205,14 @@ iframe{
     content: " 🔗";
     color: initial;
 }
+
+ul{
+    margin-left: 5px;
+}
+
+li{
+    list-style-type:"✔  ";
+}
 /*fim extra*/
 
 /*rodape*/
