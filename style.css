@@ -1,30 +1,39 @@
 /*gerais*/
-@charset "utf-8";
+@charset 'UTF-8';
 
 @font-face {
     font-family: "idroid";
     src: url(fontes/idroid.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{ 
     box-sizing : border-box;
 }
 
 body{
-    background-color: #7fe0ab;
+    background-color: #c5ebd6;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bebas Neue', 'cursive', Arial, Helvetica, sans-serif;
 }
 
 p{
     text-indent: 1.5rem;
     text-align: justify;
-    margin: 10px 0;
 }
 
-.destaque{
+strong{
     color: #207947;
     font-weight: bold;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+abbr:hover{
+    text-decoration: underline;
 }
 
 h2{
@@ -50,9 +59,8 @@ header{
 
 #cabecalho > h1{
     margin-bottom: 5px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    font-weight: normal;
+    text-align: center; 
+    font-weight: lighter;
     font-size: 1.7em;  
 }
 
@@ -65,7 +73,6 @@ header{
     display: block;
     max-width: 350px;
     text-indent: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /*links nav*/
@@ -74,14 +81,14 @@ nav{
     text-align: center;
 }
 
-nav > a {
+.linknav {
     display: inline-flex;
     padding: 3px 10px;
     text-decoration: none;
     color: #fff;
 }
 
-nav > a:hover{
+.linknav:hover{
     border-radius: 10px;
     background-color: #33b46d;
 }
@@ -91,17 +98,14 @@ nav > a:hover{
 /*conteudo*/
 main{
     padding-bottom: 30px;
-}
-
-article{
+    width: 950px;
+    max-width: 100%;
     background-color: #fff;
     box-shadow: 0 3px 10px #00000071;
     border-radius: 0 0 10px 20px;
-    width: 950px;
-    max-width: 100%;
     margin: auto;
     text-align: justify;
-    padding-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .conteudo{
@@ -117,7 +121,7 @@ article{
 }
 
 
-/*links no conteúdo*/
+/*links*/
 .conteudo> p > a{
     text-decoration: none;
     color: #207947;
@@ -171,9 +175,9 @@ iframe{
     padding-bottom: 20px;
 }
 
-#extra > h1 {
+h3 {
     font-size: 1rem;
-    background-color: rgb(33, 141, 78);
+    background-color: rgb(23, 95, 53);
     background-clip: padding-box;
     color: #fff;
     margin: 0px;
