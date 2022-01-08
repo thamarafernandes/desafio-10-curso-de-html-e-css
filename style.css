@@ -127,7 +127,7 @@ main{
 }
 
 .conteudo{
-    padding: 10px 40px;
+    padding: 10px 30px;
 }
 
 .conteudo > h1{
@@ -157,7 +157,7 @@ article a:hover{
 }
 
 article a::after{
-    content: "🔗";
+    content: "\1F517";
     color: initial;
     margin-left: 4px;
     padding: 2px 0 2px;
@@ -167,7 +167,7 @@ article a::after{
     background-color: #fff
 }
 
-#extra > p > a:hover::after{
+aside > p > a:hover::after{
     background-color: var(--cor0);
 }
 /*fim links*/
@@ -194,45 +194,46 @@ iframe{
 /*fim midias*/
 
 /*extra*/
-#extra {
-    display: block;
+aside {
     background-color: var(--cor0);
     box-shadow: #0000008f 0px 1px 3px;
-    margin: 40px 40px 10px;
+    margin: 40px 30px 10px;
     border-radius: 10px;
-    padding-bottom: 20px;
+    padding: 0 20px 10px;
 }
 
-#extra > h3 {
+aside > h3 {
     font-size: 1rem;
     background-color: var(--cor3);
     background-clip: padding-box;
     color: #fff;
-    margin: 0px;
+    margin: 0 -20px 10px;
     padding: 10px 20px;
     border-radius: 10px 10px 0px 0px;
 }
 
-#extra > p {
-    padding: 0 20px;
+aside > p {
     line-height: 1.5em;
 }
 
-ul{
-    margin-left: 5px;
-}
-
-li{
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+    column-gap: 30px;
+    column-width: 150px;
     list-style-type:"✔  ";
+    text-align: left;
+    font-size: 0.9em;
+    padding: 0 20px ;
 }
 /*fim extra*/
 
-/*rodape*/
 
+/*rodape*/
 footer{
     text-align: center;
     padding: 10px;
     background-color: var(--cor5);
     color: #fff;
-    font-size: 0.5rem;
+    font-size: 0.5em;
 }
