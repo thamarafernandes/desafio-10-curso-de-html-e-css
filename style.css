@@ -119,11 +119,11 @@ main{
     margin-bottom: 60px;
 }
 
-.conteudo{
+article{
     padding: 10px 30px;
 }
 
-.conteudo > h1{
+article > h1{
     font-family: var(--font_titulo_main);
     text-align: center;
     color:var(--cor4);
@@ -132,7 +132,7 @@ main{
     font-weight: normal;
 }
 
-.conteudo > h2{
+article > h2{
     font-size: 1.2rem;
     font-family: var(--font_titulo_main);
     color: var(--cor5);
@@ -143,7 +143,7 @@ main{
     font-weight: normal;
 }
 
-.conteudo > p {
+article > p {
     line-height: 2em;
 }
 
@@ -168,7 +168,7 @@ article a::after{
     padding: 2px 0 2px;
 }
 
-.conteudo> p > a:hover::after{
+article> p > a:hover::after{
     background-color: #fff
 }
 
@@ -187,8 +187,7 @@ img{
 #video{
     background-color: var(--cor4);
     background-clip: border-box;
-    margin: 0;
-    padding: 10px;
+    margin: 0 -30px;
 }
 
 iframe{
